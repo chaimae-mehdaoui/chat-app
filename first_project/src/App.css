@@ -1,0 +1,172 @@
+/* === App Layout === */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+/* === Header === */
+.app-name {
+  font-size: 2.5em;
+  color: #00796b;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* === Search Bar === */
+.search-bar {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.city-search {
+  padding: 10px;
+  font-size: 1em;
+  width: 250px;
+  border: 1px solid #00796b;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.city-search:focus {
+  border-color: #004d40;
+}
+
+/* === Loader === */
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* === Error Message === */
+.error-message {
+  color: #d32f2f;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.error-message svg {
+  color: #d32f2f;
+  font-size: 1.5em;
+}
+
+/* === Weather Information === */
+.weather-info {
+  font-size: 1.2em;
+  color: #004d40;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+.weather-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-info span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+/* Section des prévisions */
+.forecast {
+  margin-top: 20px;
+  text-align: center;
+  
+}
+.forecast-card:hover {
+  background: linear-gradient(45deg, #A9A9A9, #f7f7f7);
+  transform: scale(1.05);
+}
+.forecast-cards {
+  display: flex; /* Organiser les cartes côte à côte */
+  gap: 10px; /* Espacement entre les cartes */
+  overflow-x: auto; /* Permet un défilement horizontal si nécessaire */
+  padding: 10px;
+}
+
+/* Style des cartes de prévision */
+.forecast-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 100px; /* Largeur minimum pour chaque carte */
+  text-align: center;
+}
+
+.forecast-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Style de l'icône météo */
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Style de la température */
+.forecast-card .temp {
+  font-weight: bold;
+  font-size: 16px;
+  color: #00796b;
+}
+
+
+.clear-favorites {
+  background-color: #f44336; /* Couleur rouge */
+  color: white; /* Texte en blanc */
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.clear-favorites:hover {
+  background-color: #c62828; /* Couleur plus foncée au survol */
+}
+
+.forecast-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Style spécifique pour la vitesse du vent */
+.forecast-card .wind-speed {
+  font-size: 12px;
+  color: #666; /* Couleur plus douce pour le texte de la vitesse */
+}
+
